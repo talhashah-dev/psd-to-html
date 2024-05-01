@@ -76,7 +76,6 @@ nav ul li {
 .banner {
   height: 100vh;
   color: #fff;
-  
 }
 
 .hero-banner {
@@ -120,6 +119,10 @@ nav ul li {
 }
 
 .second-banner .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
   width: 50%;
 }
 
@@ -131,10 +134,15 @@ nav ul li {
   position: relative;
 }
 
-.second-banner .upper-box  {
+.second-banner .upper-box {
   height: 400px;
   width: 400px;
   background-color: #eaae00;
+}
+
+.second-banner .upper-box video {
+  height: 100%;
+  width: 400px;
 }
 
 .second-banner .lower-box {
@@ -153,12 +161,163 @@ nav ul li {
   justify-content: center;
   align-items: center;
   background-color: #ffc400;
+  gap: 30px;
+}
+
+.third-banner .info {
+  text-align: center;
 }
 
 .third-banner .card-box {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  gap: 10px;
+}
+
+.third-banner .card-box .card {
+  border-radius: 0;
+  border: none;
+  width: 16rem;
+  background-color: transparent;
+}
+
+.third-banner .card-box img {
+  border-radius: 0;
+}
+
+.third-banner .card-body {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.forth-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: #000;
+}
+
+.forth-banner .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: right;
+  width: 50%;
+}
+
+.forth-banner .video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+}
+
+.forth-banner .upper-box {
+  height: 400px;
+  width: 400px;
+  background-color: #eaae00;
+}
+
+.forth-banner .upper-box video {
+  height: 100%;
+  width: 400px;
+}
+
+.forth-banner .lower-box {
+  position: absolute;
+  top: 220px;
+  right: 50px;
+  height: 200px;
+  width: 200px;
+  background-color: #ffc400;
+  z-index: -999;
+}
+
+.fifth-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  gap: 30px;
+}
+
+.fifth-banner .info {
+  text-align: center;
+}
+
+.fifth-banner .card-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.fifth-banner .card-box .card {
+  border-radius: 0;
+  border: none;
+  width: 16rem;
+  background-color: transparent;
+}
+
+.fifth-banner .card-box img {
+  border-radius: 0;
+}
+
+.fifth-banner .card-body {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.counter {
+  background-color: #eaae00;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.counter div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter div *{
+  padding: 0;
+  margin: 0;
+}
+
+.counter img {
+  width: 80px;
+  height: 80px;
+}
+
+.footer {
+  height: 70vh;
+  background-color: #313131;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  list-style-type: none;
 }
 
 ::-webkit-scrollbar {
