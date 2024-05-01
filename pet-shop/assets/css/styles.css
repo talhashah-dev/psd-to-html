@@ -1,62 +1,171 @@
-
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .top-header {
-    background-color: #eaae00;
+  background-color: #eaae00;
+  padding: 10px 0;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+header img {
+  height: 100px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 nav ul {
-    padding: 0;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    list-style-type: none;
-    font-weight: 800;    
+  list-style-type: none;
+  font-weight: 800;
+  cursor: pointer;
 }
 
-
 .search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  height: 50px;
 }
 
 .search input {
-    background-color: #ffc400;
-    border: none;
-    outline: none;
-    padding-left: 5px;
-    width: 170px;
-    height: 100%;
-    color: #fff;
+  background-color: #ffc400;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  width: 180px;
+  height: 100%;
+  color: #fff;
 }
 
-.search input::placeholder{
-    color: #fff;
+.search input::placeholder {
+  color: #fff;
 }
 
 .search i {
-    height: 100%;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #00bfcb;
+}
+
+.search i:active {
+  opacity: 0.8;
+}
+
+.banner {
+  height: 100vh;
+  color: #fff;
+  
+}
+
+.hero-banner {
+  display: flex;
+  background-color: #ffc400;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.hero-banner .info .btn {
+  padding: 6px 14px;
+  border-width: 2px;
+}
+
+.hero-banner .picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 50%;
+}
+
+.hero-banner .picture img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  height: 400px;
+}
+
+.second-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.second-banner .info {
+  width: 50%;
+}
+
+.second-banner .video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+}
+
+.second-banner .upper-box  {
+  height: 400px;
+  width: 400px;
+  background-color: #eaae00;
+}
+
+.second-banner .lower-box {
+  position: absolute;
+  top: 220px;
+  left: 50px;
+  height: 200px;
+  width: 200px;
+  background-color: #ffc400;
+  z-index: -999;
+}
+
+.third-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc400;
+}
+
+.third-banner .card-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(126, 126, 126);
 }
